@@ -1,20 +1,12 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta charset="utf-8">
   <title>Exercice 2</title>
-  </head>
-  <body>
-    <form method="post">
-      <label for="nom">Votre nom  : </label><input type="text" name="nom" id="nom"/>
-    </form>
-      <script type="text/javascript">
-      var nom = document.getElementById("nom");
-      nom.onblur = afficherMessage;
-      function afficherMessage() {
-      alert("Merci de votre participation !");
-      }
-      </script>
-  </body>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" onblur="alert('Merci de votre participation');" />
+  </form>
+</body>
 </html>
